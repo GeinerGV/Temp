@@ -1,15 +1,12 @@
 import sys
 from aubio import source, notes
 
-if len(sys.argv) < 2:
-    print("Usage: %s <filename> [samplerate]" % sys.argv[0])
-    sys.exit(1)
+print("Usage: %s <filename> [samplerate]" % sys.argv[0])
 
 filename = sys.argv[1]
 
 downsample = 1
 samplerate = 44100 // downsample
-if len( sys.argv ) > 2: samplerate = int(sys.argv[2])
 
 win_s = 512 // downsample # fft size
 hop_s = 256 // downsample # hop size
