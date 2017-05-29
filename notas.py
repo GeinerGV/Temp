@@ -1,9 +1,7 @@
 import sys
 from aubio import source, notes
 
-print("Usage: %s <filename> [samplerate]" % sys.argv[0])
-
-filename = sys.argv[1]
+filename = input("Ingres la ruta")
 
 downsample = 1
 samplerate = 44100 // downsample
