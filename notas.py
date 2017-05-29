@@ -1,4 +1,3 @@
-import sys
 from aubio import source, notes
 
 filename = input("Ingres la ruta")
