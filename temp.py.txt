@@ -1,0 +1,18 @@
+i=0 
+... 
+prevSeg = 0 
+notasStr = "" 
+segAct = int(time) 
+timeInit = 0 
+...
+ 
+notasStr += nota + " " 
+If prevSeg != segAct: 
+	i+=1 
+	prevSeg = segAct 
+	linea = i + "\n" + timeInit{formato} + " --> " + timePrev{formato}  + "\n" +  notasStr[:len(notasStr)-1) + "\n" 
+	notasStr = "" 
+	timeInit = time 
+	print(linea) 
+	dataFile += linea 
+prevTime = time
